@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   // Initialize ArusdataJS client
   const arusdata = new ArusdataClient({
-    endpoint: 'ws://localhost:8080/arusdata'
+    endpoint: 'ws://arusdata-server.up.railway.app/arusdata'
   });
 
   // Connection handler
