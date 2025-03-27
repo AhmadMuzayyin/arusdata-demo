@@ -5,7 +5,7 @@
 class ArusdataClient {
   constructor(options = {}) {
     this.options = {
-      endpoint: options.endpoint || 'ws://arusdata-server.up.railway.app/arusdata',
+      endpoint: options.endpoint || 'ws://arusdata-server.up.railway.app:8080/arusdata',
       reconnectInterval: options.reconnectInterval || 3000,
       autoReconnect: options.autoReconnect !== false,
       ...options
