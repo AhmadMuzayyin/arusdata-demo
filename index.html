@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ArusdataJS - Chat Demo</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div class="app-container">
+    <header class="app-header">
+      <div class="logo">
+        <h1>ArusdataJS</h1>
+        <span class="tagline">Real-time Messaging</span>
+      </div>
+      <div class="connection-status" id="connection-status">
+        Menghubungkan...
+      </div>
+    </header>
+
+    <main class="chat-container">
+      <div class="sidebar">
+        <div class="user-info">
+          <h3>User Info</h3>
+          <div class="user-form">
+            <input type="text" id="username-input" placeholder="Masukkan username" />
+            <button id="set-username-btn">Set</button>
+          </div>
+        </div>
+
+        <div class="channel-list">
+          <h3>Channels</h3>
+          <ul id="channels">
+            <li data-channel="general" class="active">
+              <span># general</span>
+            </li>
+            <li data-channel="random">
+              <span># random</span>
+            </li>
+            <li data-channel="support">
+              <span># support</span>
+            </li>
+          </ul>
+
+          <div class="add-channel">
+            <input type="text" id="new-channel-input" placeholder="Nama channel baru" />
+            <button id="add-channel-btn">+</button>
+          </div>
+        </div>
+
+        <div class="online-users">
+          <h3>Online Users</h3>
+          <ul id="users-list">
+            <!-- Akan diisi dinamis -->
+          </ul>
+        </div>
+      </div>
+
+      <div class="chat-area">
+        <div class="chat-header">
+          <h2 id="current-channel"># general</h2>
+          <span id="user-count">0 users</span>
+        </div>
+
+        <div class="messages" id="messages">
+          <!-- Akan diisi dinamis -->
+          <div class="welcome-message">
+            <h3>Welcome to ArusdataJS Chat!</h3>
+            <p>This is a demo of real-time messaging using ArusdataJS.</p>
+            <p>Try opening this page in multiple tabs or browsers to see the real-time functionality in action.</p>
+          </div>
+        </div>
+
+        <div class="message-input">
+          <textarea id="message-input" placeholder="Type your message here..."></textarea>
+          <button id="send-message-btn">Send</button>
+        </div>
+      </div>
+    </main>
+
+    <footer class="app-footer">
+      <p>ArusdataJS Demo &copy; 2025 | <a href="https://github.com/yourusername/arusdata" target="_blank">GitHub</a></p>
+    </footer>
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/arusdata.js"></script>
+  <script src="js/chat.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,14 @@
+{
+  "name": "arusdata-chat-demo",
+  "version": "0.1.0",
+  "description": "Chat demo for ArusdataJS",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "Ust Dev Team | Ahmad Muzayyin",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.2"
+  }
+}
